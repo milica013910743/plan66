@@ -1,0 +1,28 @@
+ def extract_from_multiple(self, targets: list) -> list:
+        results = []
+        for target in targets:
+            results += self.body_extractor(target)
+        return results
+    
+    def extract_with_ids(self, ids: list) -> list:
+        results = []
+        for id in ids:
+            results += self.body_extractor(
+                self.id_table[id]
+            )
+        return results
+
+
+
+if __name__ == "__main__":
+    loader = PlainDataLoader()
+    print(loader.id_table)
+    print(
+        loader.body_extractor("wudai-huajianji")[-1]
+    )
+    print(
+        len(loader.extract_from_multiple(["wudai-huajianji", "wudai-nantang"]))
+    )
+    print(
+        loader.extract_with_ids([0, 1, 2])
+    )
