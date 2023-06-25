@@ -7,14 +7,6 @@ from config import INDEX_NAME, COMPLETIONS_MODEL
 # initialise Redis connection
 
 client = get_redis_connection()
-
-### SEARCH APP
-
-st.set_page_config(
-    page_title="Streamlit Search - Demo",
-    page_icon=":robot:"
-)
-
 st.title('Formula 1 Search')
 st.subheader("Search for any Formula 1 rule questions you have")
 
