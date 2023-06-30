@@ -5,8 +5,6 @@
     "ms-azuretools.vscode-azurefunctions",
     "ms-dotnettools.csharp",
     "ms-dotnettools.dotnet-interactive-vscode",
-    "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint",
     "ms-semantic-kernel.semantic-kernel"
   ]
 }
